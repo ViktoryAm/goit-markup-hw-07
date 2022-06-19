@@ -39,13 +39,15 @@
     display: block;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus {
+            background: #FFFFFF;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
 }
 
-.categories-link:hover,
-.categories-link:focus {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 
 .categories-wrap-wrapper {
     position: relative;
@@ -70,8 +72,9 @@
     padding: 63px 24px;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .categories-link:hover & {
+            transform: translateY(0);
+        }
 }
 
-.categories-link:hover .overlay-description {
-    transform: translateY(0);
-}
