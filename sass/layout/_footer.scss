@@ -55,6 +55,14 @@
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color-nav);
+    }
 }
 
 .footer-social-item:not(:last-child) {
@@ -65,14 +73,7 @@
     fill: #FFFFFF;
 }
 
-.footer-social-link {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-    background-color: var(--accent-color-nav);
-}
 
 /*Контактные данные*/
 
@@ -144,13 +145,15 @@
 
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
 }
 
-.footer-contact-form-btn:hover,
-.footer-contact-form-btn:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
 
 
 .footer-contact-form {
