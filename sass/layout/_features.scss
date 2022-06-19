@@ -4,20 +4,20 @@
     padding-top: 94px;
 }
 
-.features-list {
+.features_list {
     display: flex;
     align-items: flex-start;
     margin-left: -30px;
     margin-top: -30px;
 }
 
-.features-item {
+.features_item {
     flex-basis: calc((100% - 120px) / 4);
     margin-left: 30px;
     margin-top: 30px;
 }
 
-.features-name {
+.features_name {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -28,7 +28,7 @@
     margin-bottom: 10px;
 }
 
-.features-icon-wrapper {
+.features_wrapper {
     display: flex;
     background-color: rgba(245, 244, 250, 1);
     border-radius: 4px;

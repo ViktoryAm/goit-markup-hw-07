@@ -1,13 +1,13 @@
 /*Мы занимаемся*/
 
-.we-do-list {
+.we-do__list {
     display: flex;
     margin-top: -30px;
     margin-left: -30px;
 
 }
 
-.we-do-item {
+.we-do__item {
     flex-basis: calc((100% - 90px) / 3);
     margin-top: 30px;
     margin-left: 30px;
@@ -15,7 +15,7 @@
 
 }
 
-.we-do-description-wrapper {
+.we-do__wrapper {
     display: block;
     background: rgba(47, 48, 58, 0.8);
     position: absolute;
@@ -24,7 +24,7 @@
     width: 370px;
 }
 
-.we-do-img-description {
+.we-do__description {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
