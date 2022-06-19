@@ -80,9 +80,7 @@
 
 }
 
-.contact-form-icon:hover {
-    cursor: pointer;
-}
+
 
 .contact-form-comment {
     width: 100%;
@@ -94,12 +92,14 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
     padding: 12px 16px;
+
+    &:focus {
+        border-color: var(--accent-color-nav);
+        outline: none;
+        }
 }
 
-.contact-form-comment:focus {
-    border-color: var(--accent-color-nav);
-    outline: none;
-}
+
 
 .contact-form-checkbox-label::before {
 
